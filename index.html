@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Technologies Overview</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      main {
+        max-width: 900px;
+        margin: auto;
+        padding: 1rem;
+      }
+      header,
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 0.5rem 0;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      ul,
+      ol {
+        margin: 0;
+        padding: 0;
+        list-style-position: inside;
+      }
+      ul li,
+      ol li {
+        margin-bottom: 0.5rem;
+      }
+      form {
+        background: #fff;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      fieldset {
+        border: none;
+        margin-bottom: 1rem;
+      }
+      legend {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="color: white">Frontend Technologies Overview</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Introduction to HTML</h2>
+        <p>
+          HTML (Hypertext Markup Language) is the standard markup language used
+          to create web pages. It structures the content on the web, such as
+          text, images, and links.
+        </p>
+        <img src="./images/html-structure.jpg" alt="Example HTML structure" />
+        <p>
+          For example, the <code>&lt;img&gt;</code> tag is used to embed images,
+          and the <code>&lt;a&gt;</code> tag is used for hyperlinks.
+        </p>
+      </section>
+
+      <section>
+        <h2>CSS for Styling</h2>
+        <p>
+          CSS (Cascading Style Sheets) is used to style and layout web pages. It
+          controls the appearance of HTML elements, such as colors, fonts, and
+          spacing.
+        </p>
+        <img src="./images/css-styling.jpg" alt="Example CSS styling" />
+        <p>
+          Here is an example of CSS code to change the background color and text
+          color:
+        </p>
+        <pre><code>body {
+    background-color: #f0f0f0;
+    color: #333;
+}</code></pre>
+        <p>
+          CSS allows for advanced styling with properties like
+          <code>background-color</code>, <code>font-family</code>, and
+          <code>text-align</code>.
+        </p>
+      </section>
+
+      <section>
+        <h2>JavaScript for Interactivity</h2>
+        <p>
+          JavaScript is a programming language that adds interactivity to web
+          pages. It can manipulate HTML and CSS, handle events, and perform
+          complex calculations.
+        </p>
+        <img src="./images/JavaScript_code.png" alt="Example JavaScript code" />
+        <p>
+          Here’s a simple JavaScript example that changes the text content of an
+          element when a button is clicked:
+        </p>
+        <pre><code>&lt;button onclick="changeText()"&gt;Click me&lt;/button&gt;
+&lt;p id="demo"&gt;Hello World!&lt;/p&gt;
+
+&lt;script&gt;
+function changeText() {
+    document.getElementById("demo").innerHTML = "Text changed!";
+}
+&lt;/script&gt;</code></pre>
+      </section>
+
+      <section>
+        <h2>Introduction to Frameworks</h2>
+        <p>
+          Frontend frameworks and libraries like React, Angular, and Vue.js help
+          developers build interactive user interfaces and manage state more
+          efficiently.
+        </p>
+        <img src="./images/react-js.jpg" alt="Example React framework" />
+        <p>
+          These frameworks provide reusable components and help manage
+          application state, making development faster and more organized.
+        </p>
+      </section>
+
+      <section>
+        <h2>Best Practices and Accessibility</h2>
+        <p>
+          Following best practices ensures that web applications are performant,
+          accessible, and maintainable. Accessibility considerations include
+          providing alternative text for images and ensuring color contrast for
+          readability.
+        </p>
+        <img
+          src="./images/accessibility.jpg"
+          alt="Accessibility considerations"
+        />
+        <p>Example of providing alt text for an image:</p>
+        <pre><code>&lt;img src="example.jpg" alt="Description of the image"&gt;</code></pre>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Frontend Technologies Overview. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
